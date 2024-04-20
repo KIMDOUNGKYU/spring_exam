@@ -12,5 +12,11 @@
 	<c:forEach var="item" items="${list}" >
 			<td>${item.email}</td>
 	</c:forEach>
+	<button class="ui button">
+  Button
+</button>
+<div class="ui button" tabindex="0">
+  Focusable
+</div>
 </body>
 </html>

@@ -29,7 +29,7 @@ public class MainController {
 		
 		model.addObject("list",list);
 		model.addObject("msg",msg);
-		model.setViewName("main");
+		model.setViewName("main/main");
 		return model;
 		
 	}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="kr.co.main.MainMapper">
+  	<resultMap type="HashMap" id="test">
+  			<id column="email" property="email"/>
+  	
+  	
+  	</resultMap>
+  	
+  	<select id="selectList" resultMap="test">
+  		select email from fit_main.t_user
+  	</select>
+</mapper>
+
+

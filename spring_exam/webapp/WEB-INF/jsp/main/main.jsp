@@ -4,19 +4,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<script type="text/javascript">
+	function fn_movePape(){
+		
+		
+// 		$.ajax({
+// 			type: 'post',
+// 			url: '/adminUserListPage.do',
+// 			async: false,
+// 			dataType: 'html',
+// 			success:function(result){
+// 				console.log(result);
+// 			},
+// 			error: function(error){
+// 				console.log(error)
+// 			}
+// 		});
+
+	}
+</script>
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>${msg}</h1>
-	<c:forEach var="item" items="${list}" >
-			<td>${item.email}</td>
-	</c:forEach>
-	<button class="ui button">
-  Button
-</button>
-<div class="ui button" tabindex="0">
-  Focusable
-</div>
+
 </body>
 </html>

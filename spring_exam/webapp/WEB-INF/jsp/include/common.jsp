@@ -4,8 +4,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="/css/semantic/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="/css/common/common.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="s
+  crossorigin="anonymous"></script>
 <script src="/js/semantic/semantic.min.js"></script>
 </head>
+<body>
+
+</body>
 </html>

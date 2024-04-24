@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="kr.co.admin.AdminMapper">
+ 
+ 	<resultMap type="HashMap" id="test">
+		  	<id column="iuser" property="iuser"/>
+		  	<id column="uid" property="uid"/>
+		  	<id column="upw" property="upw"/>
+		  	<id column="nm" property="nm"/>
+  			<id column="pw" property="pw"/>
+  			<id column="email" property="email"/>
+  			<id column="rdt" property="rdt"/>
+  			<id column="point" property="point"/>
+  			<id column="role" property="role"/>
+  	</resultMap>
+  	
+  	<select id="selectAdminUserList" resultType="AdminVo">
+  		/*MainMapper.selectList() 사용자 목록 조회*/
+  		select  
+			iuser,
+			uid,
+			upw,
+			nm,
+			email,
+			rdt,
+			point,
+			role
+		from fit_main.t_user
+  	</select>
+</mapper>
+
+

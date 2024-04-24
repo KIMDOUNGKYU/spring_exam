@@ -1,4 +1,4 @@
-package kr.co.main;
+package kr.co.admin;
 import java.util.HashMap;
 import java.util.List;
 
@@ -14,15 +14,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
-public class MainController {
-	@Autowired private MainService mainservice;
+public class AdminController {
+	@Autowired private AdminService adminService;
 	
-	@RequestMapping(value = "/main.do")
+	@RequestMapping(value = "/adminUserListPage.do")
 	public ModelAndView main(ModelAndView model) throws Exception {
-		String msg = "컨트롤러";
 		
-		model.addObject("msg",msg);
-		model.setViewName("main/main");
+		model.addObject("userList",this.adminService.selectAdminUserList());
+		model.setViewName("admin/userListPage");
 		return model;
 		
 	}

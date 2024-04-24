@@ -13,3 +13,9 @@
 	bottom : 0;
 	text-align: center;
 }
+
+
+.line_wrap{
+	display: flex;
+	align-items: center;
+}

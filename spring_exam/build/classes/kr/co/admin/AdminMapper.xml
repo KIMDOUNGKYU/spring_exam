@@ -26,6 +26,7 @@
 			point,
 			role
 		from fit_main.t_user
+		order by iuser desc
   	</select>
 </mapper>
 

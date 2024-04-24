@@ -10,7 +10,7 @@
 	
 	
 	function fn_join(){
-		
+		alert("test");
 	}
 
 </script>

@@ -1,0 +1,92 @@
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f9f9f9;
+    }
+.header {
+    background-color: #fff;
+    color: #333;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column; /* 아이템들을 세로로 정렬 */
+	text-align: center; /* 텍스트를 가운데 정렬 */
+}
+.ui.search {
+    display: flex;
+    align-items: center;
+    width: 770px; /* 검색 창의 너비 조정 */
+    /* border-bottom: 1px solid #ccc;  *//* 검색창 아래에 줄 추가 */
+    /* margin-bottom: 20px; */ /* 검색창 아래 여백 추가 */
+}
+.ui.search .input {
+    position: relative;
+    width: 100%;
+}
+.ui.search .input input[type="text"] {
+    padding: 13px 40px 13px 16px; /* 오른쪽에 이미지가 위치할 수 있도록 오른쪽 여백 추가 */
+    border-radius: 24px;
+    border: 2px solid #00b388; /* 파란색 테두리 */
+    margin-right: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* 패딩, 보더를 포함한 너비로 설정 */
+}
+.ui.search .input img {
+    position: absolute;
+    right: 29px; /* 이미지의 위치 설정 */
+    top: 50%; /* 수직 중앙 정렬을 위해 상단 기준으로 50% 설정 */
+    transform: translateY(-50%); /* 수직 중앙 정렬을 위한 보정 */
+    width: 24px; /* 이미지의 크기 조정 */
+    height: auto; /* 이미지의 높이 자동 조정 */
+}
+
+.logo {
+	margin-right: 45px; /* 로고와 검색창 사이 간격 추가 */
+}
+        
+.logo img{
+    width: 191px;
+    height: 127px;
+
+}
+        
+.tabsContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px; /* 탭 영역의 너비 조정 */
+}
+.tabs {
+    display: flex;
+}
+.tabs a {
+     text-decoration: none;
+    color: #333;
+    padding: 15px;
+    padding-right: 45; /* 우측 패딩을 0으로 설정하여 이미지와 간격을 없앰 */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* 글자 색상 전환 효과 추가 */
+    display: flex; /* 아이콘과 텍스트를 가로 정렬하기 위해 Flexbox 사용 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+.tabs a img {
+    margin-right: 10px; /* 아이콘과 텍스트 사이 간격 설정 */
+}
+.tabs a:hover {
+    color: #007bff; /* 호버 시 글자 색상 변경 */
+}
+.user-actions {
+    display: flex;
+    align-items: center;
+    /* width: 500px; */ /* 로그인 및 회원가입 영역의 너비 조정 */
+    justify-content: flex-end; /* 아이템들을 우측으로 정렬 */
+}
+.user-actions a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}

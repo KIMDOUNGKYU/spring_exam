@@ -10,7 +10,9 @@
 	});
 	
 	function fn_select(){
-		alert("test");
+		
+		$("#frm").attr("action","/adminUserListPage.do");
+		$("#frm").submit();
 		
 	};
 
@@ -20,7 +22,7 @@
 <body>
 	<div>
 		<div>
-			<form name="frm" method="post">
+			<form id="frm" name="frm" method="post">
 				<div>
 					<input type="button" name="sel_btn" onClick="fn_select();" class="ui black button"  style="float: right; margin-bottom: 10px; margin-top: 10px;" tabindex="0" value="Á¶È¸"/>
 				</div>
